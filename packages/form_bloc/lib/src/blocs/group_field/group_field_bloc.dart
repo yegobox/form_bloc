@@ -58,7 +58,7 @@ class GroupFieldBloc<T extends FieldBloc, ExtraData>
     List<T> fieldBlocs = const [],
     ExtraData? extraData,
   }) : super(GroupFieldBlocState(
-          name: name ?? Uuid().v1(),
+          name: name ?? "Uuid().v1()",
           isValid: MultiFieldBloc.areFieldBlocsValid(fieldBlocs),
           isValidating: MultiFieldBloc.areFieldBlocsValidating(fieldBlocs),
           formBloc: null,

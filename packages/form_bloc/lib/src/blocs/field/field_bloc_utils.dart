@@ -2,13 +2,12 @@ import 'dart:collection';
 
 import 'package:collection/collection.dart';
 import 'package:form_bloc/src/blocs/field/field_bloc.dart';
-import 'package:uuid/uuid.dart';
 
 class FieldBlocUtils {
   FieldBlocUtils._();
 
   static String generateName(String? name) {
-    return name ?? Uuid().v1();
+    return name ?? "Uuid().v1()";
   }
 
   /// Returns the error of the [_initialValue].
