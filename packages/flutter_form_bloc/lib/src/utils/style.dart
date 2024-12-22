@@ -38,11 +38,11 @@ class Style {
   static TextStyle resolveTextStyle({
     required bool isEnabled,
     required TextStyle style,
-    required MaterialStateProperty<Color?> color,
+    required WidgetStateProperty<Color?> color,
   }) {
     return style.copyWith(
       color: color.resolve({
-        if (!isEnabled) MaterialState.disabled,
+        if (!isEnabled) WidgetState.disabled,
       }),
     );
   }

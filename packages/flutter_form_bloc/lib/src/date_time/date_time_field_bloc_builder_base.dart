@@ -87,7 +87,7 @@ class DateTimeFieldBlocBuilderBase<T> extends StatefulWidget {
   /// {@macro flutter_form_bloc.FieldBlocBuilder.style}
   final TextStyle? textStyle;
 
-  final MaterialStateProperty<Color?>? textColor;
+  final WidgetStateProperty<Color?>? textColor;
 
   /// Defaults `true`
   final bool? showClearIcon;

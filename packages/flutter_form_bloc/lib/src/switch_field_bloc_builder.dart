@@ -75,7 +75,7 @@ class SwitchFieldBlocBuilder extends StatelessWidget {
   final bool animateWhenCanShow;
 
   final TextStyle? textStyle;
-  final MaterialStateProperty<Color?>? textColor;
+  final WidgetStateProperty<Color?>? textColor;
 
   // ========== [Switch] ==========
 
@@ -86,19 +86,19 @@ class SwitchFieldBlocBuilder extends StatelessWidget {
   final ImageProvider? inactiveThumbImage;
 
   /// [Switch.thumbColor]
-  final MaterialStateProperty<Color?>? thumbColor;
+  final WidgetStateProperty<Color?>? thumbColor;
 
   /// [Switch.trackColor]
-  final MaterialStateProperty<Color?>? trackColor;
+  final WidgetStateProperty<Color?>? trackColor;
 
   /// [Switch.materialTapTargetSize]
   final MaterialTapTargetSize? materialTapTargetSize;
 
   /// [Switch.mouseCursor]
-  final MaterialStateProperty<MouseCursor?>? mouseCursor;
+  final WidgetStateProperty<MouseCursor?>? mouseCursor;
 
   /// [Switch.overlayColor]
-  final MaterialStateProperty<Color?>? overlayColor;
+  final WidgetStateProperty<Color?>? overlayColor;
 
   /// [Switch.splashRadius]
   final double? splashRadius;

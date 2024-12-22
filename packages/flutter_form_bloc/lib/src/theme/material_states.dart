@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_form_bloc/src/utils/to_string.dart';
 
 class SimpleMaterialStateProperty<T> extends Equatable
-    implements MaterialStateProperty<T> {
+    implements WidgetStateProperty<T> {
   final T normal;
   final T disabled;
 
@@ -13,8 +13,8 @@ class SimpleMaterialStateProperty<T> extends Equatable
   });
 
   @override
-  T resolve(Set<MaterialState> states) {
-    if (states.contains(MaterialState.disabled)) return disabled;
+  T resolve(Set<WidgetState> states) {
+    if (states.contains(WidgetState.disabled)) return disabled;
     return normal;
   }
 

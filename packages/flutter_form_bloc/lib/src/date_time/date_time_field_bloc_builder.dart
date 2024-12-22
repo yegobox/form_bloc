@@ -78,7 +78,7 @@ class DateTimeFieldBlocBuilder extends StatelessWidget {
   final TextStyle? textStyle;
 
   /// {@macro flutter_form_bloc.FieldBlocBuilder.textColor}
-  final MaterialStateProperty<Color?>? textColor;
+  final WidgetStateProperty<Color?>? textColor;
 
   final DateTime initialDate;
   final DateTime firstDate;

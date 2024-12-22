@@ -347,7 +347,7 @@ class _StepperState extends State<Stepper> with TickerProviderStateMixin {
     } else {
       return widget.steps[index].isActive
           ? colorScheme.secondary
-          : colorScheme.background;
+          : colorScheme.surface;
     }
   }
 
@@ -463,23 +463,23 @@ class _StepperState extends State<Stepper> with TickerProviderStateMixin {
             TextButton(
               onPressed: widget.onStepContinue,
               style: ButtonStyle(
-                foregroundColor: MaterialStateProperty.resolveWith<Color?>(
-                    (Set<MaterialState> states) {
-                  return states.contains(MaterialState.disabled)
+                foregroundColor: WidgetStateProperty.resolveWith<Color?>(
+                    (Set<WidgetState> states) {
+                  return states.contains(WidgetState.disabled)
                       ? null
                       : (_isDark()
                           ? colorScheme.onSurface
                           : colorScheme.onPrimary);
                 }),
-                backgroundColor: MaterialStateProperty.resolveWith<Color?>(
-                    (Set<MaterialState> states) {
-                  return _isDark() || states.contains(MaterialState.disabled)
+                backgroundColor: WidgetStateProperty.resolveWith<Color?>(
+                    (Set<WidgetState> states) {
+                  return _isDark() || states.contains(WidgetState.disabled)
                       ? null
                       : colorScheme.primary;
                 }),
-                padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+                padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
                     buttonPadding),
-                shape: MaterialStateProperty.all<OutlinedBorder>(buttonShape),
+                shape: WidgetStateProperty.all<OutlinedBorder>(buttonShape),
               ),
               child: Text(localizations.continueButtonLabel),
             ),

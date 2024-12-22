@@ -68,21 +68,21 @@ class CheckboxFieldBlocBuilder extends StatelessWidget {
   final TextStyle? textStyle;
 
   /// {@macro flutter_form_bloc.FieldBlocBuilder.textColor}
-  final MaterialStateProperty<Color?>? textColor;
+  final WidgetStateProperty<Color?>? textColor;
 
   // ========== [Checkbox] ==========
 
   /// [Checkbox.mouseCursor]
-  final MaterialStateProperty<MouseCursor?>? mouseCursor;
+  final WidgetStateProperty<MouseCursor?>? mouseCursor;
 
   /// [Checkbox.fillColor]
-  final MaterialStateProperty<Color?>? fillColor;
+  final WidgetStateProperty<Color?>? fillColor;
 
   /// [Checkbox.checkColor]
-  final MaterialStateProperty<Color?>? checkColor;
+  final WidgetStateProperty<Color?>? checkColor;
 
   /// [Checkbox.overlayColor]
-  final MaterialStateProperty<Color?>? overlayColor;
+  final WidgetStateProperty<Color?>? overlayColor;
 
   /// [Checkbox.splashRadius]
   final double? splashRadius;

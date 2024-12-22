@@ -13,7 +13,7 @@ class FormTheme extends Equatable {
   final TextStyle? textStyle;
 
   /// If [FieldTheme.textColor] is null this value is used
-  final MaterialStateProperty<Color?>? textColor;
+  final WidgetStateProperty<Color?>? textColor;
 
   /// If [FieldTheme.decorationTheme] is null this value is used
   final InputDecorationTheme? decorationTheme;
@@ -83,7 +83,7 @@ class FormTheme extends Equatable {
 
   FormTheme copyWith({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     EdgeInsetsGeometry? padding,
     CheckboxFieldTheme? checkboxTheme,
@@ -154,7 +154,7 @@ class CheckboxFieldTheme extends FieldTheme {
 
   const CheckboxFieldTheme({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     this.checkboxTheme,
     this.controlAffinity,
@@ -167,7 +167,7 @@ class CheckboxFieldTheme extends FieldTheme {
 
   CheckboxFieldTheme copyWith({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     CheckboxThemeData? checkboxTheme,
     FieldBlocBuilderControlAffinity? controlAffinity,
@@ -308,7 +308,7 @@ class DateTimeFieldTheme extends FieldTheme {
 
   const DateTimeFieldTheme({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     this.textAlign,
     this.showClearIcon,
@@ -322,7 +322,7 @@ class DateTimeFieldTheme extends FieldTheme {
 
   DateTimeFieldTheme copyWith({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     bool? showClearIcon,
     Widget? clearIcon,
@@ -380,7 +380,7 @@ class DropdownFieldTheme extends FieldTheme {
 
   const DropdownFieldTheme({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     this.textOverflow,
     this.maxLines,
@@ -395,7 +395,7 @@ class DropdownFieldTheme extends FieldTheme {
 
   DropdownFieldTheme copyWith({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     TextOverflow? textOverflow,
     int? maxLines,
@@ -462,7 +462,7 @@ class SwitchFieldTheme extends FieldTheme {
 
   const SwitchFieldTheme({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     this.switchTheme,
     this.controlAffinity,
@@ -474,7 +474,7 @@ class SwitchFieldTheme extends FieldTheme {
 
   SwitchFieldTheme copyWith({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     SwitchThemeData? switchTheme,
     FieldBlocBuilderControlAffinity? controlAffinity,
@@ -514,7 +514,7 @@ class RadioFieldTheme extends FieldTheme {
 
   const RadioFieldTheme({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     this.radioTheme,
     this.canTapItemTile = false,
@@ -527,7 +527,7 @@ class RadioFieldTheme extends FieldTheme {
 
   RadioFieldTheme copyWith({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     RadioThemeData? radioTheme,
     bool? canTapItemTile,
@@ -579,7 +579,7 @@ class TextFieldTheme extends FieldTheme {
 
   const TextFieldTheme({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     this.textAlign,
     @Deprecated('Use clearSuffixButtonTheme.icon') this.clearIcon,
@@ -596,7 +596,7 @@ class TextFieldTheme extends FieldTheme {
 
   TextFieldTheme copyWith({
     TextStyle? textStyle,
-    MaterialStateProperty<Color?>? textColor,
+    WidgetStateProperty<Color?>? textColor,
     InputDecorationTheme? decorationTheme,
     TextAlign? textAlign,
     Widget? clearIcon,

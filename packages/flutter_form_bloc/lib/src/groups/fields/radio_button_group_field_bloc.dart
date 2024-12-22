@@ -68,7 +68,7 @@ class RadioButtonGroupFieldBlocBuilder<Value> extends StatelessWidget {
   final TextStyle? textStyle;
 
   /// {@macro flutter_form_bloc.FieldBlocBuilder.textColor}
-  final MaterialStateProperty<Color?>? textColor;
+  final WidgetStateProperty<Color?>? textColor;
 
   /// {@macro flutter_form_bloc.FieldBlocBuilder.groupStyle}
   final GroupStyle groupStyle;
@@ -81,13 +81,13 @@ class RadioButtonGroupFieldBlocBuilder<Value> extends StatelessWidget {
   // ========== [Radio] ==========
 
   /// [Radio.mouseCursor]
-  final MaterialStateProperty<MouseCursor?>? mouseCursor;
+  final WidgetStateProperty<MouseCursor?>? mouseCursor;
 
   /// [Radio.fillColor]
-  final MaterialStateProperty<Color?>? fillColor;
+  final WidgetStateProperty<Color?>? fillColor;
 
   /// [Radio.overlayColor]
-  final MaterialStateProperty<Color?>? overlayColor;
+  final WidgetStateProperty<Color?>? overlayColor;
 
   /// [Radio.splashRadius]
   final double? splashRadius;

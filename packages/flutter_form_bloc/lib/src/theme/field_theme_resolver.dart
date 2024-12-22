@@ -24,7 +24,7 @@ class FieldThemeResolver {
         theme.textTheme.titleMedium!;
   }
 
-  MaterialStateProperty<Color?> get textColor {
+  WidgetStateProperty<Color?> get textColor {
     return fieldTheme?.textColor ??
         formTheme.textColor ??
         SimpleMaterialStateProperty(
@@ -41,8 +41,8 @@ abstract class FieldTheme extends Equatable {
   final TextStyle? textStyle;
 
   /// Resolves the color of the [textStyle].
-  /// You will receive [MaterialState.disabled]
-  final MaterialStateProperty<Color?>? textColor;
+  /// You will receive [WidgetState.disabled]
+  final WidgetStateProperty<Color?>? textColor;
 
   /// The theme for InputDecoration of this field
   final InputDecorationTheme? decorationTheme;

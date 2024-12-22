@@ -71,7 +71,7 @@ class TimeFieldBlocBuilder extends StatelessWidget {
   /// {@macro flutter_form_bloc.FieldBlocBuilder.style}
   final TextStyle? textStyle;
 
-  final MaterialStateProperty<Color?>? textColor;
+  final WidgetStateProperty<Color?>? textColor;
 
   final SelectableDayPredicate? selectableDayPredicate;
   final DatePickerMode initialDatePickerMode = DatePickerMode.day;
