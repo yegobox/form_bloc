@@ -288,7 +288,8 @@ class _DateTimeFieldBlocBuilderBaseState<T>
           widget.initialTime;
     }
     return TimeOfDay.fromDateTime(
-      widget.dateTimeFieldBloc.state.value as DateTime? ?? DateTime.now(),
+      widget.dateTimeFieldBloc.state.value as DateTime? ??
+          DateTime.now().toUtc(),
     );
   }
 
