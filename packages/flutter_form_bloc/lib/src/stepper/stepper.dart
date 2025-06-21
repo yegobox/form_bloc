@@ -477,8 +477,8 @@ class _StepperState extends State<Stepper> with TickerProviderStateMixin {
                       ? null
                       : colorScheme.primary;
                 }),
-                padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
-                    buttonPadding),
+                padding:
+                    WidgetStateProperty.all<EdgeInsetsGeometry>(buttonPadding),
                 shape: WidgetStateProperty.all<OutlinedBorder>(buttonShape),
               ),
               child: Text(localizations.continueButtonLabel),
