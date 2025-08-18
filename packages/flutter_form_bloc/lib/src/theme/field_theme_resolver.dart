@@ -15,7 +15,20 @@ class FieldThemeResolver {
   InputDecorationTheme get decorationTheme {
     return fieldTheme?.decorationTheme ??
         formTheme.decorationTheme ??
-        theme.inputDecorationTheme;
+        InputDecorationTheme(
+          labelStyle: theme.textTheme.titleMedium,
+          hintStyle: theme.textTheme.bodyMedium,
+          errorStyle: theme.textTheme.bodySmall,
+          focusedBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: theme.colorScheme.primary),
+          ),
+          enabledBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: theme.colorScheme.onSurface),
+          ),
+          disabledBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: theme.disabledColor),
+          ),
+        );
   }
 
   TextStyle get textStyle {
