@@ -10,7 +10,8 @@ environment:
 
 dependencies:
   meta: ^1.7.0
-  bloc: ^8.0.1
+  bloc: ^9.0.0
+
   rxdart: ^0.28.0
   equatable: ^2.0.3
   collection: ^1.15.0
@@ -19,6 +20,6 @@ dependencies:
 dev_dependencies:
   test: ^1.20.1
   mocktail: ^1.0.1
-  bloc_test: ^9.0.2
+  bloc_test: ^10.0.0
   fire_line_diff: ^1.5.3
   lints: ^3.0.0
